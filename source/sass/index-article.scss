@@ -1,12 +1,20 @@
 .index-article__container {
   padding: 0 20px;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
 }
 
 .index-article__inner-container {
   position: relative;
   background-color: $concrete;
   padding: 30px 20px 18px 20px;
+
+  @media (min-width: 768px) {
+    padding: 77px 62px 80px 52px;
+  }
 }
 
 .index-article__title {
@@ -18,10 +26,22 @@
   line-height: 37px;
   font-weight: 400;
   margin-bottom: 29px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .index-article__title--pro {
   margin-left: 24px;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .index-article__title::before {
@@ -33,6 +53,14 @@
   height: 50px;
   border-radius: 50%;
   background-color: $apple;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 62px;
+    left: unset;
+  }
 }
 
 .index-article__title--slim::after {
@@ -44,6 +72,15 @@
   height: 50px;
   background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 140px 194px;
+    width: 140px;
+    height: 194px;
+    right: 92px;
+    top: 81px;
+    left: unset;
+  }
 }
 
 .index-article__title--pro::after {
@@ -55,6 +92,15 @@
   height: 28px;
   background-image: url("../img/cat-pro.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 268px 112px;
+    width: 268px;
+    height: 112px;
+    right: 28px;
+    top: 135px;
+    left: unset;
+  }
 }
 
 .index-article__text {
@@ -64,6 +110,15 @@
   margin-bottom: 15px;
   border-bottom: 1px solid #D9D9D9;
   color: $tundora;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    width: 50%;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+  }
 }
 
 .index-article__link {
@@ -73,6 +128,12 @@
   color: $black;
   max-width: 82%;
   padding-right: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 50px;
+  }
 }
 
 .index-article__link::before {
@@ -83,6 +144,11 @@
   width: 18px;
   height: 2px;
   background-color: $black;
+
+  @media (min-width: 768px) {
+    top: 15px;
+    right: 12px;
+  }
 }
 
 .index-article__link::after {
@@ -93,5 +159,10 @@
   right: -21px;
   border: 6px solid transparent;
   border-left: 8px solid $black;
+
+  @media (min-width: 768px) {
+    top: 10px;
+    right: -9px;
+  }
 }
 

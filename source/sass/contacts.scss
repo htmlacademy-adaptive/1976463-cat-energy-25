@@ -1,0 +1,60 @@
+.contacts__wrapper {
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+}
+
+.contacts__inner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26px 20px;
+
+  @media (min-width: 768px) {
+    padding: 56px 40px;
+  }
+}
+
+.contacts__offer {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  width: 45%;
+  margin-right: auto;
+  padding-right: 14px;
+
+  @media (min-width: 768px) {
+    width: 25%;
+    text-align: left;
+  }
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $tundora;
+  width: 50%;
+
+  @media (min-width: 768px) {
+    width: 25%;
+    text-align: right;
+  }
+}
+
+.contacts__city {
+  @media (min-width: 768px) {
+    display: block;
+    margin-top: 14px;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  display: block;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
+}

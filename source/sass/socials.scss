@@ -1,0 +1,47 @@
+.socials {
+  background-color: $concrete;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.socials__container {
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+}
+
+.socials__link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $tundora;
+
+  &:first-child {
+    @media (min-width: 768px) {
+      margin-right: 22px;
+    }
+  }
+}
+
+.socials__logo-link {
+  margin: 0 auto;
+}
+
+.socials__logo-container {
+  display: flex;
+  padding-top: 39px;
+  padding-bottom: 32px;
+}
+
+.socials__bottom-container {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
