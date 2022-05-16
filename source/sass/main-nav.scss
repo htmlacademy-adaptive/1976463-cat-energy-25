@@ -1,0 +1,33 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+  padding: 0 30px;
+}
+
+
+.main-nav__list {
+  display: none;
+}
+
+.main-nav__toggle {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  width: 24px;
+  height: 16px;
+}
+
+.main-nav--closed .main-nav__toggle::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+}

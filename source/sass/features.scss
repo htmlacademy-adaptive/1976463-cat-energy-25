@@ -1,0 +1,91 @@
+.features__container {
+  padding: 0 20px;
+}
+
+.features__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 49px;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  position: relative;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  color: $tundora;
+}
+
+.features__item:last-child {
+  margin: 0;
+}
+
+.features__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  background-color: $apple;
+}
+
+.features__item--benefit::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 18px;
+  background-image: url("../img/benefit.svg");
+  background-repeat: no-repeat;
+}
+
+.features__item--powder::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 31px;
+  top: 12px;
+  left: 15px;
+  background-image: url("../img/powder.svg");
+  background-repeat: no-repeat;
+}
+
+.features__item--meal::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  top: 15px;
+  left: 18px;
+  background-image: url("../img/meal.svg");
+  background-repeat: no-repeat;
+}
+
+.features__item--time::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 33px;
+  top: 14px;
+  left: 14px;
+  background-image: url("../img/time.svg");
+  background-repeat: no-repeat;
+}
+

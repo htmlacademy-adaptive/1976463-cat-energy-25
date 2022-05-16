@@ -1,0 +1,125 @@
+.example {
+  background-color: $gallery;
+}
+
+.example__container {
+  padding: 25px 20px 40px 20px;
+}
+
+.example__title {
+  margin-top: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $tundora;
+}
+
+.example__stats-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 17px;
+}
+
+.example__stats {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  border: 1px solid $silver;
+  border-radius: 5px;
+  margin-bottom: 17px;
+}
+
+.example__stats::after {
+  position: absolute;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: $gallery;
+  font-size: 12px;
+  width: 77px;
+  line-height: 12px;
+  color: $tundora;
+}
+
+.example__stats--weight {
+  padding: 15px 42px 17.5px 42.5px;
+  max-width: 17%;
+}
+
+.example__stats--weight::after {
+  content: "снижение веса";
+  bottom: -15px;
+  left: 23px;
+}
+
+.example__stats--days {
+  padding: 15px 21px 17.5px 20.5px;
+  max-width: 30%;
+}
+
+.example__stats--days::after {
+  content: "затрачено времени";
+  bottom: -15px;
+  left: 21px;
+}
+
+.example__expenses {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.example__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.example__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.example__results {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__button {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 13px;
+  background-color: $white;
+  border: 1px solid #CDCDCD;
+  border-radius: 6px;
+  min-width: 85px;
+  height: 14px;
+}
+
+.example__button::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 35.5px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: $apple;
+}
