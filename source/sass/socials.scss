@@ -12,7 +12,11 @@
   padding: 0 20px;
 
   @media (min-width: 768px) {
-    padding: 0 30px;
+    padding: 58px 30px 55px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 58px 110px 55px 110px;
   }
 }
 
@@ -37,6 +41,10 @@
   display: flex;
   padding-top: 39px;
   padding-bottom: 32px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .socials__bottom-container {
@@ -44,4 +52,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }

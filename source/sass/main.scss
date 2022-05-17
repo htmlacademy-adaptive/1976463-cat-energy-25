@@ -1,0 +1,10 @@
+.main__articles-container {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 50px;
+    padding: 0 110px;
+    margin-bottom: 82px;
+  }
+}

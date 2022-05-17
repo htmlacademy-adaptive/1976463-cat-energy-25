@@ -1,0 +1,64 @@
+.additional-catalog {
+  padding: 0 20px;
+}
+
+.additional-catalog__header {
+  padding-top: 8px;
+  padding-bottom: 13px;
+}
+
+.additional-catalog__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.additional-catalog__title::after {
+  content: "";
+  position: absolute;
+  min-width: 53px;
+  max-width: 100vw;
+  width: calc(53px + 100vw - 320px);
+  height: 2px;
+  background-color: $apple;
+  top: 14px;
+  right: -20px;
+  overflow: hidden;
+}
+
+.additional-catalog__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.additional-catalog__promotion-container {
+  margin: 35px 0;
+  position: relative;
+}
+
+.additional-catalog__promotion {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+  padding: 187px 61px 43px 58px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.additional-catalog__promotion-container::before {
+  content: "";
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/gift.svg");
+  background-repeat: no-repeat;
+}

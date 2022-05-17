@@ -1,0 +1,39 @@
+.additional-list__item {
+  border-top: 1px solid $silver;
+  padding-bottom: 18px;
+}
+
+.additional-list__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $mine-shaft;
+  text-transform: uppercase;
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+
+.additional-list__info {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+  color: $tundora;
+  margin-bottom: 13px;
+}
+
+.additional-list__value {
+  margin: 0;
+}
+
+.additional-list__link {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.additional-list__item:last-child {
+  border-bottom: 1px solid $silver;
+}

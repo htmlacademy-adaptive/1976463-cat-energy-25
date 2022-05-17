@@ -1,3 +1,9 @@
+.contacts {
+  @media (min-width: 1440px) {
+    position: relative;
+  }
+}
+
 .contacts__wrapper {
   @media (min-width: 768px) {
     padding: 0 30px;
@@ -10,8 +16,24 @@
   padding: 26px 20px;
 
   @media (min-width: 768px) {
-    padding: 56px 40px;
+    padding: 56px 70px;
   }
+
+  @media (min-width: 1440px) {
+    z-index: 1;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
+    padding: 56px 80px;
+    align-items: center;
+    width: 565px;
+    box-sizing: border-box;
+  }
+}
+
+.contacts__inner-wrapper--colorful {
+  background-color: $concrete;
 }
 
 .contacts__offer {
@@ -27,6 +49,10 @@
     width: 25%;
     text-align: left;
   }
+
+  @media (min-width: 1440px) {
+    width: 163px;
+  }
 }
 
 .contacts__address {
@@ -41,12 +67,17 @@
     width: 25%;
     text-align: right;
   }
+
+  @media (min-width: 1440px) {
+    width: 155px;
+    text-align: left;
+  }
 }
 
 .contacts__city {
   @media (min-width: 768px) {
     display: block;
-    margin-top: 14px;
+    margin-top: 19px;
   }
 }
 
