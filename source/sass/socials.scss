@@ -31,10 +31,30 @@
       margin-right: 22px;
     }
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.socials__link:hover svg {
+  fill: #5EAA2F;
+}
+
+.socials__link:active svg {
+  opacity: 0.3;
 }
 
 .socials__logo-link {
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .socials__logo-container {

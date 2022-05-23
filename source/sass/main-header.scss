@@ -11,7 +11,14 @@
     background-repeat: no-repeat;
     background-position: center center, right top;
     background-size: auto auto, 720px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $white 50%, rgba(104, 183, 56, 0.85) 50%),
+        url("../img/index-background-desktop@2x.jpg");
+    }
   }
+
+
 }
 
 .main-header--white {
@@ -30,6 +37,11 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 320px 304px, 320px 304px, 100% auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/index-background@2x.jpg"), linear-gradient(#63a73a, #63a73a);
+  }
 
   @media (min-width: 768px) {
     min-height: unset;

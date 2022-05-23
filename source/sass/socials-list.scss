@@ -25,6 +25,16 @@
   margin-right: 24px;
 }
 
+.socials-list__link:hover svg {
+  fill: #68B738;
+}
+
+.socials-list__link:active svg {
+  opacity: 0.3;
+}
+
 .socials-list__link--tg {
   display: flex;
 }
+
+

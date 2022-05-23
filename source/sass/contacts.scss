@@ -21,7 +21,7 @@
 
   @media (min-width: 1440px) {
     max-height: 250px;
-    overflow: scroll;
+    overflow: overlay;
     z-index: 1;
     position: absolute;
     top: 95px;
@@ -35,6 +35,10 @@
 
 .contacts__inner-wrapper--colorful {
   background-color: $concrete;
+
+  @media (min-width: 1440px) {
+    background-color: $white;
+  }
 }
 
 .contacts__offer {

@@ -13,4 +13,14 @@
   font-size: 14px;
   line-height: 18px;
   padding: 11px 0;
+
+  &:hover {
+    background-color: #5EAA2F;
+  }
+
+  &:active {
+    background-color: #5EAA2F;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
 }

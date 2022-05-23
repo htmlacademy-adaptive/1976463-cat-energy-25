@@ -22,12 +22,16 @@
 }
 
 .form__input {
-  border: 1px solid $silver;
+  border: 1px solid #e7e7e7;
   padding: 16px 30px 11px 14px;
   box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
 
   @media (min-width: 768px) {
-    padding: 21.4px 40px 12.6px 18.6px;
+    padding: 11px 40px 8.6px 18.6px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -86,6 +90,20 @@
   padding-bottom: 22px;
 }
 
+.form__list--bio .form__input {
+  &:focus-visible {
+    outline: 2px solid $tundora;
+  }
+
+  &:hover {
+    border-color: $silver;
+  }
+
+  &:invalid {
+    outline: 2px solid $error;
+  }
+}
+
 .form__input--name {
   width: calc(226px + 100vw - 320px);
   min-width: 226px;
@@ -130,7 +148,7 @@
   padding-bottom: 22px;
 
   @media (min-width: 768px) {
-    padding: 49px 67px 47px 72px;
+    padding: 49px 67px 49px 72px;
     border-bottom: none;
   }
 
@@ -143,7 +161,7 @@
 .form__list--type {
   @media (min-width: 768px) {
     padding: 30px 28px 29px 26px;
-    border: 1px solid $silver;
+    border: 1px solid #e7e7e7;
   }
 }
 
@@ -166,6 +184,10 @@
   text-transform: uppercase;
   color: $mine-shaft;
   padding-left: 45px;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -190,6 +212,14 @@
   }
 }
 
+.form__label--type:hover::before {
+  border-color: #bababa;
+}
+
+.form__label--type:active::before {
+  opacity: 0.3;
+}
+
 .form__radio-input:checked + .form__label--type::after {
   content: "";
   position: absolute;
@@ -206,6 +236,10 @@
     top: 6px;
     left: 11px;
   }
+}
+
+.form__label--type:active::after {
+  opacity: 0.3;
 }
 
 .form__inner-wrapper {
@@ -311,6 +345,26 @@
       margin-right: 78px;
     }
   }
+}
+
+.form__label--contacts .form__input {
+  &:focus-visible {
+    outline: 2px solid $tundora;
+  }
+
+  &:hover {
+    border-color: $silver;
+  }
+
+  &:invalid {
+    outline: 2px solid $error;
+  }
+}
+
+/* Не работает */
+.form__label--contacts:invalid line,
+.form__label--contacts:invalid path {
+  stroke: $error;
 }
 
 .form__icon {
@@ -558,6 +612,15 @@
     height: 38px;
     left: 3px;
   }
+}
+
+.form__label--extra:hover::before {
+  border-color: #bababa;
+}
+
+/* Не работает */
+.form__label + .form__check-input:disabled {
+  opacity: 0.3;
 }
 
 .form__check-input:checked + .form__label--extra::after {

@@ -193,6 +193,10 @@
   font-size: 16px;
   line-height: 16px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
@@ -230,3 +234,22 @@
   }
 }
 
+.index-article__link:hover::before {
+  width: 24px;
+  righT: 6px;
+}
+
+.index-article__link:hover::after {
+  right: -15px;
+}
+
+.index-article__link:active::before {
+  width: 24px;
+  righT: 6px;
+  opacity: 0.3;
+}
+
+.index-article__link:active::after {
+  right: -15px;
+  opacity: 0.3;
+}
