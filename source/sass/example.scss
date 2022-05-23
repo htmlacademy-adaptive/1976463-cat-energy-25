@@ -3,30 +3,35 @@
 
   @media (min-width: 768px) {
     background-color: unset;
-    background-image: linear-gradient(to bottom, $white 54%, $gallery 54%);
+    background-image: linear-gradient(to bottom, $white 57.3%, $gallery 57.3%);
   }
 
   @media (min-width: 1440px) {
     display: flex;
-    background-image: linear-gradient(to bottom, $white 24%, $gallery 24%);
+    background-image: linear-gradient(to bottom, $white 28%, $concrete 28%);
   }
 }
 
 .example__container {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 45px 20px;
 
   @media (min-width: 768px) {
-    padding: 43px 30px 55px 30px;
+    padding: 43px 30px 60px 30px;
   }
 
   @media (min-width: 1440px) {
-    padding: 0 110px 55px 110px;
+    padding: 0 110px 71px 110px;
   }
 }
 
 .example__title-wrapper {
+  @media (min-width: 768px) {
+    margin-bottom: 84px;
+  }
+
   @media (min-width: 1440px) {
-    width: 40%;
+    width: 36%;
+    margin-bottom: 0;
     margin-right: auto;
     padding-top: 43px;
     flex-shrink: 0;
@@ -62,9 +67,12 @@
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
+    padding-right: 20px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: 1440px) {
+    padding-right: 0;
     margin-bottom: 69px;
   }
 }
@@ -75,13 +83,16 @@
   justify-items: center;
   justify-content: center;
   column-gap: 32px;
-  row-gap: 34px;
-  margin-bottom: 17px;
+  row-gap: 31px;
+  margin-bottom: 40px;
 
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    column-gap: unset;
+    row-gap: unset;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1440px) {
@@ -139,39 +150,42 @@
   max-width: 31%;
 
   @media (min-width: 768px) {
-    padding: 15px 57px 20px 57px;
+    padding: 15px 56px 20px 57px;
+    margin-right: 41px;
   }
 }
 
 .example__stats--weight::after {
   content: "снижение веса";
-  bottom: -15px;
-  left: 23px;
+  bottom: -12px;
+  left: 21px;
 
   @media (min-width: 768px) {
-    left: 25px;
-    bottom: -7px;
+    left: 23px;
+    bottom: -4px;
     padding: 0 8px;
   }
 }
 
 .example__stats--days {
-  padding: 15px 21px 17.5px 20.5px;
-  max-width: 65%;
+  padding: 15px 21px 17.5px 18.5px;
+  max-width: 70%;
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
-    padding: 15px 30px 20px 30px;
+    padding: 15px 28px 20px 30px;
   }
 }
 
 .example__stats--days::after {
   content: "затрачено времени";
-  bottom: -15px;
+  bottom: -12px;
   left: 21px;
+  text-transform: lowercase;
 
   @media (min-width: 768px) {
     left: 8px;
-    bottom: -7px;
+    bottom: -5px;
     width: 127px;
     padding: 0 8px;
   }
@@ -180,23 +194,23 @@
 .example__expenses {
   display: block;
   text-align: center;
-  margin-bottom: 40px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
   grid-column: 1/3;
 
   @media (min-width: 768px) {
-    margin-bottom: 0;
     margin-left: auto;
     text-align: right;
     font-size: 20px;
     width: 25%;
+    margin-bottom: 8px;
   }
 
   @media (min-width: 1440px) {
     width: 100%;
     margin-top: 35px;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
   }
@@ -205,6 +219,17 @@
 .example__text {
   @media (min-width: 1440px) {
     margin-right: 63px;
+  }
+}
+
+.example__money {
+  @media (min-width: 768px) {
+    display: block;
+    margin-top: 8px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
   }
 }
 
@@ -217,7 +242,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 27px;
+  }
 }
 
 .example__results {
@@ -236,7 +265,7 @@
   position: relative;
   box-sizing: border-box;
   padding: 0;
-  margin: 0 13px;
+  margin: 0 18px;
   background-color: $white;
   border: 1px solid #CDCDCD;
   border-radius: 6px;
@@ -263,7 +292,7 @@
     height: 6px;
     background-color: #dcdcdc;
     cursor: pointer;
-    margin: 0 13px;
+    margin: 0 23px;
   }
 
   .example__range::-webkit-slider-runnable-track {

@@ -1,12 +1,14 @@
 .features__container {
-  padding: 0 20px;
+  padding: 0 20px 49px 20px;
 
   @media (min-width: 768px) {
-    padding: 0 30px;
+    padding: 16px 30px 44px 30px;
+    border-bottom: 1px solid $silver;
   }
 
   @media (min-width: 1440px) {
-    padding: 0 110px;
+    padding: 0 110px 28px 110px;
+    border-bottom: none;
   }
 }
 
@@ -28,11 +30,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  margin-bottom: 49px;
 
   @media (min-width: 768px) {
     display: grid;
-    column-gap: 153px;
+    column-gap: 129px;
     grid-template-columns: repeat(2, minmax(230px, 36%));
     row-gap: 37px;
   }
@@ -62,6 +63,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 150px 0px 57px 0;
+  }
 }
 
 .features__item:last-child {
@@ -80,7 +85,7 @@
   @media (min-width: 768px) {
     width: 80px;
     height: 80px;
-    top: 20px;
+    top: 39px;
   }
 }
 
@@ -88,7 +93,11 @@
   @media (min-width: 768px) {
     background-image: url("../img/1.svg");
     background-repeat: no-repeat;
-    background-position: center right 72px;
+    background-position: top 39px right 60px;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: top 39px right 53px;
   }
 }
 
@@ -103,7 +112,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: 768px) {
-    top: 45px;
+    top: 65px;
     left: 28px;
   }
 }
@@ -112,7 +121,11 @@
   @media (min-width: 768px) {
     background-image: url("../img/2.svg");
     background-repeat: no-repeat;
-    background-position: center right 38px;
+    background-position: top 37px right 20px;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: top 39px right 12px;
   }
 }
 
@@ -127,7 +140,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: 768px) {
-    top: 42px;
+    top: 62px;
     left: 25px;
   }
 }
@@ -136,7 +149,11 @@
   @media (min-width: 768px) {
     background-image: url("../img/3.svg");
     background-repeat: no-repeat;
-    background-position: center right 38px;
+    background-position: top 39px right 20px;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: top 39px right 11px;
   }
 }
 
@@ -151,8 +168,8 @@
   background-repeat: no-repeat;
 
   @media (min-width: 768px) {
-    top: 42px;
-    left: 29px;
+    top: 63px;
+    left: 28px;
   }
 }
 
@@ -160,7 +177,11 @@
   @media (min-width: 768px) {
     background-image: url("../img/4.svg");
     background-repeat: no-repeat;
-    background-position: center right 38px;
+    background-position: top 39px right 10px;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: top 39px right 3px;
   }
 }
 
@@ -175,7 +196,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: 768px) {
-    top: 44px;
+    top: 61px;
     left: 24px;
   }
 }

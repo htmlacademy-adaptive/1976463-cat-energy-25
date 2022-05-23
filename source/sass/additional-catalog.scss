@@ -1,10 +1,22 @@
 .additional-catalog {
   padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px;
+  }
 }
 
 .additional-catalog__header {
   padding-top: 8px;
   padding-bottom: 13px;
+
+  @media (min-width: 768px) {
+    padding-top: 10px;
+  }
 }
 
 .additional-catalog__title {
@@ -12,6 +24,34 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 37px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 0;
+  }
+}
+
+.additional-catalog__title::before {
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $apple;
+    top: 22px;
+    left: -67px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 70px;
+    left: -110px;
+  }
 }
 
 .additional-catalog__title::after {
@@ -24,18 +64,59 @@
   background-color: $apple;
   top: 14px;
   right: -20px;
-  overflow: hidden;
+  z-index: -1;
+
+  @media (min-width: 768px) {
+    width: calc(328px + 100vw - 768px);
+    top: 22px;
+    right: -30px;
+  }
+
+  @media (min-width: 1440px) {
+    width: calc(957px + 100vw - 1440px);
+    right: -110px;
+  }
+}
+
+.additional-catalog__container {
+  @media (min-width: 1440px) {
+    display: flex;
+    margin-bottom: 86px;
+  }
 }
 
 .additional-catalog__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    border: 1px solid $silver;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 73%;
+    margin-bottom: 0;
+    margin-right: auto;
+    border: none;
+  }
 }
 
 .additional-catalog__promotion-container {
   margin: 35px 0;
   position: relative;
+
+  @media (min-width: 768px) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 245px;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 0;
+  }
 }
 
 .additional-catalog__promotion {
@@ -49,6 +130,18 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-promo.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-promo-tablet.jpg");
+    padding: 73px 123px 68px 422px;
+    text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 187px 30px 42px 30px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-promo-desktop.jpg");
+    text-align: center;
+  }
 }
 
 .additional-catalog__promotion-container::before {
@@ -61,4 +154,14 @@
   height: 80px;
   background-image: url("../img/gift.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    transform: unset;
+    left: 79px;
+  }
+
+  @media (min-width: 1440px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

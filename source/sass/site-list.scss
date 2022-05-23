@@ -3,6 +3,21 @@
   line-height: 24px;
   text-transform: uppercase;
 
+  @media (min-width: 768px) {
+    position: relative;
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: 1440px) {
+      &:not(:last-child) {
+        margin-right: 34px;
+      }
+    }
+  }
+
   @media (min-width: 1440px) {
     font-size: 20px;
     line-height: 30px;
@@ -10,8 +25,31 @@
   }
 }
 
-.site-list__item:not(:first-child) {
-  @media (min-width: 1440px) {
-    margin-left: 34px;
+.site-list__item--current::after {
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $apple;
+    bottom: -6px;
+    left: 0;
   }
 }
+
+.site-list__item--current-white::after {
+  @media (min-width: 1440px) {
+    background-color: $white;
+  }
+}
+
+.site-list__link {
+  color: $black;
+}
+
+.site-list__link--white {
+  @media (min-width: 1440px) {
+    color: $white;
+  }
+}
+

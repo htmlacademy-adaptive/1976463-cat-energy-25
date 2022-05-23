@@ -11,7 +11,6 @@
   color: $tundora;
 
   @media (min-width: 768px) {
-    margin-bottom: 33px;
     font-size: 16px;
     line-height: 16px;
     grid-template-columns: 1fr 1fr;
@@ -27,9 +26,9 @@
 @media (min-width: 768px) {
   .info-list__parameter,
   .info-list__value {
-  padding-bottom: 9px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid $silver;
-}
+    padding-bottom: 7px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
