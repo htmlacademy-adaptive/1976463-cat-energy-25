@@ -84,7 +84,7 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before{
+.main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -94,4 +94,3 @@
   background-color: $black;
   box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
-

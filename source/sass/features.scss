@@ -65,7 +65,7 @@
   }
 
   @media (min-width: 1440px) {
-    padding: 150px 0px 57px 0;
+    padding: 150px 0 57px 0;
   }
 }
 
@@ -78,8 +78,8 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background-color: $apple;
 
   @media (min-width: 768px) {
@@ -200,4 +200,3 @@
     left: 24px;
   }
 }
-

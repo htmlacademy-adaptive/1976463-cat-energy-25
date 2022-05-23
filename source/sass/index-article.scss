@@ -152,10 +152,10 @@
 
 .index-article__text {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   padding-bottom: 22px;
   margin-bottom: 19px;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid $alto;
   color: $tundora;
 
   @media (min-width: 768px) {
@@ -236,7 +236,7 @@
 
 .index-article__link:hover::before {
   width: 24px;
-  righT: 6px;
+  right: 6px;
 }
 
 .index-article__link:hover::after {
@@ -245,7 +245,7 @@
 
 .index-article__link:active::before {
   width: 24px;
-  righT: 6px;
+  right: 6px;
   opacity: 0.3;
 }
 
