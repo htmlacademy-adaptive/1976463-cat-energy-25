@@ -1,0 +1,255 @@
+.index-article__container {
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: $concrete;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.index-article__inner-container {
+  position: relative;
+  background-color: $concrete;
+  padding: 30px 20px 20px 20px;
+
+  @media (min-width: 768px) {
+    padding: 77px 62px 57px 52px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 77px 51px 59px 52px;
+    background-color: unset;
+  }
+}
+
+.index-article__title {
+  margin: 0;
+  margin-left: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  margin-bottom: 29px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    text-align: center;
+    margin-left: 21px;
+    margin-bottom: 73px;
+  }
+}
+
+.index-article__title--pro {
+  margin-left: 38px;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 60px;
+  }
+}
+
+.index-article__title::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $apple;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 62px;
+    left: unset;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 47px;
+  }
+}
+
+.index-article__title--slim::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 29px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 140px 194px;
+    width: 140px;
+    height: 194px;
+    right: 92px;
+    top: 81px;
+    left: unset;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 70px 97px;
+    width: 70px;
+    height: 97px;
+    right: unset;
+    left: 67px;
+    top: 41px;
+  }
+}
+
+.index-article__title--pro::after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 13px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/cat-pro.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 268px 112px;
+    width: 268px;
+    height: 112px;
+    right: 28px;
+    top: 135px;
+    left: unset;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 134px 56px;
+    width: 134px;
+    height: 56px;
+    right: unset;
+    top: 67px;
+    left: 33px;
+  }
+}
+
+.index-article__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid $alto;
+  color: $tundora;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    width: 55%;
+    padding-bottom: 0;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+}
+
+.index-article__text--pro {
+  @media (min-width: 768px) {
+    width: 57.5%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+  }
+}
+
+.index-article__link {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: $black;
+  max-width: 82%;
+  padding-right: 30px;
+  font-size: 16px;
+  line-height: 16px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 50px;
+  }
+}
+
+.index-article__link::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 18px;
+  height: 2px;
+  background-color: $black;
+
+  @media (min-width: 768px) {
+    top: 15px;
+    right: 12px;
+  }
+}
+
+.index-article__link::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  top: 3px;
+  right: -21px;
+  border: 6px solid transparent;
+  border-left: 8px solid $black;
+
+  @media (min-width: 768px) {
+    top: 10px;
+    right: -9px;
+  }
+}
+
+.index-article__link:hover::before {
+  width: 24px;
+  right: 6px;
+}
+
+.index-article__link:hover::after {
+  right: -15px;
+}
+
+.index-article__link:active::before {
+  width: 24px;
+  right: 6px;
+  opacity: 0.3;
+}
+
+.index-article__link:active::after {
+  right: -15px;
+  opacity: 0.3;
+}

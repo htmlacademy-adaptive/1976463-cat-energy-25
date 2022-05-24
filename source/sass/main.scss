@@ -1,0 +1,9 @@
+.main__articles-container {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 50px;
+    padding: 80px 110px 72px 110px;
+  }
+}

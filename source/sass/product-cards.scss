@@ -1,0 +1,249 @@
+.product-cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    column-gap: 60px;
+    row-gap: 68px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    padding: 0 110px;
+  }
+}
+
+.product-cards__container {
+  display: flex;
+  margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+
+.product-cards__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: 768px) {
+    border: none;
+    padding: 0 37px 39px 37px;
+    background-image: linear-gradient(to top, $concrete 85.5%, $white 85.5%);
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 37px 39px 40px;
+  }
+}
+
+.product-cards__item:first-child {
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
+}
+
+.product-cards__image-container {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 31px;
+    padding: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
+}
+
+.product-cards__image {
+  @media (min-width: 768px) {
+    width: 168px;
+    height: auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 162px;
+  }
+}
+
+.product-cards__description-container {
+  width: 50%;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.product-cards__title {
+  font-weight: 400;
+  max-width: 70%;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $mine-shaft;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 55%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 100%;
+    width: 80%;
+  }
+}
+
+.product-cards__info-list {
+  @media (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+}
+
+.product-cards__link {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.product-cards__order-link {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+}
+
+.product-cards__item--more {
+  padding-top: 78px;
+
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+    background-image: none;
+    border: 2px solid $concrete;
+    align-self: flex-end;
+    padding-top: 159px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 157px 35px 36px 36px;
+  }
+}
+
+.product-cards__more {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $cod-gray;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 60%;
+    margin: 0 auto 24px auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+  }
+}
+
+.product-cards__more::before,
+.product-cards__more::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: -40px;
+  left: 50%;
+  background-color: #d3d3d3;
+
+  @media (min-width: 768px) {
+    width: 60px;
+    top: -80px;
+  }
+}
+
+.product-cards__more::before {
+  transform: translateX(-50%);
+}
+
+.product-cards__more::after {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.procuct-cards__text {
+  display: block;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $tundora;
+  margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 75%;
+    margin: 0 auto 87px auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+  }
+}
+
+.product-cards__button {
+  width: 100%;
+  color: $tundora;
+  background-color: $concrete;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+  margin-bottom: 23px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
