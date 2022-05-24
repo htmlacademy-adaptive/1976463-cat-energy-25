@@ -57,10 +57,11 @@
 .product-cards__image-container {
   display: flex;
   width: 50%;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 
   @media (min-width: 768px) {
+    align-items: center;
     width: 100%;
     margin-bottom: 31px;
     padding: 0;
